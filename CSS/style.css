@@ -1,0 +1,342 @@
+:root,
+[data-bs-theme="light"] {
+  --bs-white: #fff;
+  --bs-black: #000;
+  --bs-grey: #ebebeb;
+  --bs-primary: #0d6efd;
+  --bs-light-bright: hsl(200, 100%, 60%);
+  --bs-text-hover: #6edff6s;
+  --bs-transparent: #ffffff95;
+  --bs-background: #270089;
+  --bs-background-secondary: #251e35;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Sección heacer */
+/* .header-container {}*/
+
+.titulo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem;
+  background: var(--bs-transparent);
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-titulo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-titulo h1 {
+  color: var(--bs-black);
+}
+
+.ceo-container {
+  display: flex;
+  text-align: center;
+}
+
+.nav-container {
+  justify-content: center;
+}
+
+.div-navigation {
+  display: flex;
+  gap: 20px;
+  padding-right: 1.2rem;
+}
+
+.div-navigation a {
+  text-decoration: none;
+  color: var(--bs-black);
+  font-weight: bold;
+}
+
+.div-navigation a:hover {
+  transition: ease 0.3s;
+  color: var(--bs-light-bright);
+}
+
+/* Sección About (Página principal) */
+main {
+  padding-top: 15rem;
+  background-image: url(../IMAGENES/bg-brave2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-container {
+  display: flex;
+  gap: 12rem;
+}
+
+.icons-container {
+  width: 3.5%;
+}
+
+.icon-list {
+  display: block;
+  background: var(--bs-transparent);
+  position: relative;
+  border-radius: 0 0.5rem 0.5rem 0;
+  box-shadow: 3px 3px 3px 3px var(--bs-transparent);
+}
+
+.icon-list ul {
+  display: block;
+}
+
+.icon-list ul li {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.icon-list ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  color: var(--bs-black);
+  border-radius: 1rem;
+  transition: background-color 0.3s ease;
+  margin-left: -1.4rem;
+}
+
+.icon-list ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+  width: 2rem;
+  height: 2rem;
+}
+
+.about-section {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.about-section h1 {
+  font-weight: bolder;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  color: var(--bs-transparent);
+}
+
+.about-section p {
+  width: 90%;
+  margin: 0 auto;
+  color: var(--bs-transparent);
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.9rem;
+}
+
+/* Sección de Acerca de nosotros */
+.about-us-container {
+  background-color: var(--bs-grey);
+  width: 100%;
+  margin-top: 19rem;
+  padding-top: 4rem;
+}
+
+.title-about {
+  text-align: center;
+}
+
+.separator {
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    var(--bs-transparent),
+    var(--bs-light-bright)
+  );
+  border: none;
+  border-radius: 5px;
+  width: 5%;
+  margin: 0 auto;
+}
+
+.p-aboutUs {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.information-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.phillip-container,
+.pancho-container {
+  width: 50%;
+}
+
+.phillip-container h2,
+.pancho-container h2 {
+  text-align: center;
+}
+
+.phillip-container hr,
+.pancho-container hr {
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    var(--bs-transparent),
+    var(--bs-light-bright)
+  );
+  border: none;
+  border-radius: 5px;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.phillip-container p,
+.pancho-container p {
+  margin: 1rem;
+}
+
+.phillip-container button,
+.pancho-container button {
+  background: var(--bs-light-bright);
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1rem 1.5rem;
+  display: block;
+  margin: 2rem auto 0 auto;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.phillip-container button:hover,
+.pancho-container button:hover {
+  animation: glow-pulse 2s ease-in-out infinite;
+  transform: translateY(-4px);
+}
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.9), 0 0 35px rgba(0, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+}
+
+/* Sección Footer */
+footer {
+  position: relative;
+  /* border: 1px solid white; */
+}
+
+.icon-container {
+  display: block;
+}
+
+.contact-container div {
+  display: flex;
+}
+
+/* Por si acaso... Para no borrar */
+/* h2 {
+
+  padding: 1rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.skills {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #f9f9f9;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+  opacity: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.skills p {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.skills a {
+  text-decoration: none;
+  color: black;
+}
+
+.skills p:hover {
+  background: #c0c0c030;
+}
+
+.skills.show {
+  max-height: 500px;  lo suficiente para mostrar el contenido 
+  opacity: 1;
+  transition: max-height 0.4s ease-in, opacity 0.4s ease-in;
+} 
+
+.icon-container {
+  padding-right: 20px;
+}
+
+.icon-container a {
+  text-decoration: none;
+  color: var(--bs-white);
+}
+
+.icon-container a:hover {
+  transition: ease 0.3s;
+  color: var(--bs-light-bright);
+}
+
+.div-navigation a:nth-child(1) {
+  padding: 0.5rem 1rem;
+  color: var(--bs-black);
+  border-radius: 1rem;
+  cursor: default;
+}
+
+.div-navigation a:nth-child(2) {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+} 
+
+.div-navigation a:nth-child(3) {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+} */
