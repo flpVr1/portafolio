@@ -9,3 +9,14 @@ document.querySelectorAll(".nav-container").forEach((container) => {
     skills.classList.remove("show");
   });
 });
+
+window.addEventListener("beforeunload", function () {
+  localStorage.setItem("scrollY", window.scrollY);
+});
+
+window.addEventListener("load", function () {
+  const savedScroll = localStorage.getItem("scrollY");
+  if (savedScroll !== null) {
+    window.scrollTo(0, parseInt(savedScroll));
+  }
+});
