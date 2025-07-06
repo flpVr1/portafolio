@@ -356,6 +356,8 @@ main {
   text-decoration: none;
   color: var(--bs-black);
   font-weight: bold;
+  text-align: center;
+  padding: 0.7rem 0;
   transition: 0.3s ease-in;
 }
 
@@ -366,16 +368,51 @@ main {
 
 /* Sección Footer */
 footer {
-  position: relative;
-  /* border: 1px solid white; */
-}
-
-.icon-container {
-  display: block;
-}
-
-.contact-container div {
+  width: 100%;
+  height: 30vh;
+  background-color: var(--bs-black);
+  color: var(--bs-white);
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoMedia-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 20px;
+}
+
+.partners-info {
+  flex: 1;
+  text-align: left;
+}
+
+.partners-media {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.partners-media ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.icons-footer {
+  filter: brightness(0) invert(1);
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icons-footer:hover {
+  transform: scale(1.2);
 }
 
 /* Por si acaso... Para no borrar */
