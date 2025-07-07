@@ -18,6 +18,12 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 /* Sección heacer */
 /* .header-container {}*/
 
@@ -114,7 +120,7 @@ main {
   color: var(--bs-black);
   border-radius: 1rem;
   transition: background-color 0.3s ease;
-  margin-left: -1.4rem;
+  /* margin-left: -1.5rem; */
 }
 
 .icon-list ul li a:hover {
@@ -365,6 +371,64 @@ main {
 .habilitie-card a:hover {
   transition: 0.3s ease-out;
   color: var(--bs-light-bright);
+}
+
+/* Sección de proyectos */
+#projects-section {
+  background-color: var(--bs-white);
+}
+
+.project-section {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.div-title-description {
+  align-content: center;
+}
+
+.project-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-img img {
+  width: 600px;
+  height: 300px;
+  border-radius: 1rem;
+}
+
+.project-img button {
+  background: var(--bs-light-bright);
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1rem 1.5rem;
+  display: block;
+  margin: 2rem auto 0 auto;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project-img button:hover {
+  animation: glow-pulse 2s ease-in-out infinite;
+  transform: translateY(-4px);
+}
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.9), 0 0 35px rgba(0, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+  }
 }
 
 /* Sección Footer */
