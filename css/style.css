@@ -79,7 +79,7 @@ body {
 /* Sección About (Página principal) */
 main {
   padding-top: 15rem;
-  background-image: url(../IMAGENES/bg-brave2.jpg);
+  background-image: url(../assets/images/bg-brave2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
