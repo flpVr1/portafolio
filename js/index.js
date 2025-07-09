@@ -20,3 +20,10 @@ window.addEventListener("load", function () {
     window.scrollTo(0, parseInt(savedScroll));
   }
 });
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  if (!this.checkValidity()) {
+    e.preventDefault();
+    alert("Te faltan algunos datos, por favor complétalos!");
+  }
+});
