@@ -1,0 +1,15 @@
+# node_modules y entorno backend
+backend/node_modules/
+backend/.env
+backend/uploads/
+backend/data.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
