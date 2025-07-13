@@ -22,6 +22,7 @@ html,
 body {
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Sección heacer */
@@ -78,7 +79,7 @@ body {
 
 /* Sección About (Página principal) */
 main {
-  padding-top: 15rem;
+  padding-top: 21rem;
   background-image: url(../assets/images/bg-brave2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -442,7 +443,16 @@ main {
 
 /* Sección formularios */
 #form-section {
-  padding-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-image: url(../assets/images/form-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#form-section h1,
+#form-section p {
+  text-align: center;
   padding-bottom: 2rem;
 }
 
@@ -450,7 +460,7 @@ main {
   border-radius: 1rem;
   padding: 0.8rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  width: 70vw;
+  width: 45vw;
   margin: 0 auto;
   padding: 1rem;
 }

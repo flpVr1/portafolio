@@ -10,7 +10,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Full Skill</title>
   </head>
   <body>
     <header>
@@ -24,9 +24,9 @@
           </div>
           <nav class="nav-container">
             <div class="div-navigation">
-              <a href="">Acerca de</a>
-              <a href="#">Proyectos</a>
-              <a href="#">Contáctanos</a>
+              <a href="#about-us">Acerca de</a>
+              <a href="#projects-section">Proyectos</a>
+              <a href="#form-section">Contáctanos</a>
             </div>
           </nav>
           <!-- <section class="media-container">
@@ -98,7 +98,7 @@
       </div>
       <div class="about-us-container">
         <section class="title-about">
-          <h1>Acerca de nosotros</h1>
+          <h1 id="about-us">Acerca de nosotros</h1>
           <hr class="separator" />
           <p class="p-aboutUs">
             Full Skill es fundado como una manera de poder explotar nuestras
@@ -137,7 +137,7 @@
               Estamos disponible para proyectos, colaborar en ideas innovadoras
               o simplemente conversar sobre posibles oportunidades.
             </p>
-            <button>Contáctame</button>
+            <a href="#form-section"><button>Contáctanos</button></a>
           </div>
           <div class="pancho-container">
             <h2>Pancho</h2>
@@ -166,7 +166,7 @@
               Estamos disponible para proyectos, colaborar en ideas innovadoras
               o simplemente conversar sobre posibles oportunidades.
             </p>
-            <button>Contáctame</button>
+            <a href="#form-section"><button>Contáctanos</button></a>
           </div>
         </section>
 
@@ -279,15 +279,15 @@
         </section>
 
         <section id="form-section">
+          <h1>Contáctanos</h1>
+          <p>Aquí puedes dejar tus datos de contacto y te daremos un toque para poder comunicarnos contigo lo antes posible y poder resolver todas las dudas y los desafíos que tengas para nosotros.</p>
           <div class="form-container">
-            <h2>Formulario de Contacto</h2>
             <form
               id="contactForm" 
               enctype="multipart/form-data"
             >
               <!-- Grupo de Información Personal -->
               <fieldset>
-                <legend>Información Personal</legend>
 
                 <div class="form-group">
                   <label for="nombre">Nombre</label>
@@ -315,7 +315,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="email">Correo electrónico:*</label>
+                  <label for="email">Correo electrónico:</label>
                   <input
                     type="email"
                     id="email"
@@ -342,7 +342,7 @@
                 <legend>Información Adicional</legend>
 
                 <div class="form-group">
-                  <label for="asunto">Asunto:*</label>
+                  <label for="asunto">Asunto:</label>
                   <select id="asunto" name="asunto" required>
                     <option value="" disabled selected>
                       Seleccione un asunto
@@ -354,7 +354,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="mensaje">Mensaje:*</label>
+                  <label for="mensaje">Mensaje:</label>
                   <textarea
                     id="mensaje"
                     name="mensaje"
@@ -420,7 +420,7 @@
               <a href="#"
                 ><img
                   class="icons-footer"
-                  src="./assets/images/SVG/github.svg"
+                  src="./assets/images/SVG/instagram.svg"
                   alt=""
                 />
               </a>
