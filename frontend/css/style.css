@@ -251,6 +251,11 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+.phillip-container a,
+.pancho-container a {
+  text-decoration: none;
+}
+
 .phillip-container button:hover,
 .pancho-container button:hover {
   animation: glow-pulse 2s ease-in-out infinite;
