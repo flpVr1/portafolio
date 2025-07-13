@@ -386,6 +386,26 @@ main {
 /* Sección de proyectos */
 #projects-section {
   background-color: var(--bs-white);
+  padding-top: 2rem;
+}
+
+#projects-section h1,
+#projects-section p {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+#projects-section hr {
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    var(--bs-transparent),
+    var(--bs-light-bright)
+  );
+  border: none;
+  border-radius: 5px;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .project-section {
@@ -453,7 +473,24 @@ main {
 #form-section h1,
 #form-section p {
   text-align: center;
-  padding-bottom: 2rem;
+}
+
+#form-section p {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#form-section hr {
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    var(--bs-transparent),
+    var(--bs-light-bright)
+  );
+  border: none;
+  border-radius: 5px;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .form-container {
